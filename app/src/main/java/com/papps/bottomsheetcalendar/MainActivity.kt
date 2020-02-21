@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
             val month: Int = datePicker.month + 1
             val year: Int = datePicker.year
             Log.d("cuack","Date: $day - $month - $year")
+            tv_result.text = "Date: $day - $month - $year"
+            dialog.dismiss()
         }
         dialog.setContentView(viewDialog)
         dialog.show()
